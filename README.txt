@@ -1,4 +1,4 @@
-Welcome to Chatbot Bot v0.69!
+Welcome to Chatbot Bot!
 
 For autofill to work, enter your username and password between the quotations in lines 1 and 2 of "content-script.js" (WARNING!! Redistributing the extension after entering sensitive information is a very, very bad idea!)
 
