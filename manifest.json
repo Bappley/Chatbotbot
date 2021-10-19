@@ -1,0 +1,30 @@
+{
+	"name": "Chatbot Bot",
+	"description": "Bot the bot",
+	//Copyright 2021, Andrew Liu, All rights reserved.
+	"version": "0.69",
+	"manifest_version": 3,
+	
+	"background" : {
+		"service_worker" : "background.js"
+	},
+	
+	"content_scripts": [{
+     	"matches": ["https://healthlab.urmc.rochester.edu/UniversityHealthScreen/*"],
+     	"exclude_matches": ["https://healthlab.urmc.rochester.edu/UniversityHealthScreen/Home/*"],
+     	"js": ["content-script.js"]
+    },
+    {
+   		"matches": ["https://healthlab.urmc.rochester.edu/UniversityHealthScreen/Home/*"],
+     	"js": ["content-script2.js"]
+    }],
+     
+	"permissions": [],
+	
+	"action": {
+		"default_icon": {
+			"128" : "/meliora.png"
+		}
+	}	
+	
+}
